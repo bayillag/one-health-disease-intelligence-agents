@@ -59,39 +59,6 @@ To secure the execution loop against prompt injection and the *Confused Deputy* 
 *   **Hybrid Policy Server:** Enforces structural gating (YAML-based tool access permissions) and semantic gating (Gemini-vetted input filtering).
 *   **Vibe Diff Elicitation:** Intercepts high-stakes action tools to translate complex proposed steps into a plain-English summary, demanding explicit human-in-the-loop authorization.
 
-*   
-
-one-health-disease-intelligence-agents/
-
-├── src/                                      # Core production codebase
-│   ├── agents/
-│   │   ├── risk_analysis_agent.py            # Outbreak probability and logistic scoring
-│   │   ├── disease_informatics_engine.py      # Computes the 9 descriptive dashboard views
-│   │   ├── analytics_suite.py                # Runs disease trends and spatial groupings
-│   │   ├── epidemiological_modeling_engine.py # Implements NGM and basic reproduction (R0)
-│   │   ├── epi_toolbox.py                    # Active sampling size design & RR/OR calculators
-│   │   ├── dashboard_visualization_engine.py # Compiles GIS, Leaflet heatmaps, and JSON outputs
-│   │   ├── forewarning_query_engine.py      # Implements multi-key spatial query workflows
-│   │   ├── prediction_bulletin_engine.py     # Indexes, searches, and archives bulletins
-│   │   └── mcp_server.py                     # Stdio-based JSON-RPC tool provider interface
-│   │
-│   └── dashboard/
-│       └── app.R                             # Interactive R Shiny Web Application
-│
-├── tests/                                    # Automated unit testing suite
-│   ├── __init__.py
-│   ├── test_data_ingestion.py                # Tests boundary clipping of the 18 factors
-│   ├── test_risk_analysis.py                 # Tests mathematical R0 calculations
-│   └── test_communication.py                 # Tests query filtering and GeoJSON compilation
-│
-└── docs/                                     # Documentation, charts, and bulletins
-    ├── architecture.png                      # Agent workflow diagram
-    ├── risk_map_example.png                  # Sample geospatial map screenshot output
-    ├── risk_map_example.json                  # Compiled GeoJSON spatial mapping asset
-    └── bulletins/                            # Archive of completed prediction bulletins
-        ├── bulletin_2026_06.md               # June 2026 forecast report
-        └── bulletin_2026_05.md               # May 2026 forecast report
----
 
 ## 3. Operational Limitations & Reality Check
 
