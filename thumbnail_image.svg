@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" width="560" height="280">
+    <defs>
+        <!-- Background Gradient -->
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#070b19" />
+            <stop offset="50%" stop-color="#111833" />
+            <stop offset="100%" stop-color="#1a2347" />
+        </linearGradient>
+
+        <!-- Glow and Blur Filters -->
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="25" />
+        </filter>
+        <filter id="mediumBlur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10" />
+        </filter>
+
+        <!-- Grid Pattern -->
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        </pattern>
+    </defs>
+
+    <!-- 1. Background & Grid -->
+    <rect width="560" height="280" fill="url(#bgGrad)" />
+    <rect width="560" height="280" fill="url(#grid)" />
+
+    <!-- 2. Heatmaps (Epidemic Hotspots) -->
+    <circle cx="480" cy="130" r="70" fill="#ff3366" filter="url(#heavyBlur)" opacity="0.35" />
+    <circle cx="240" cy="140" r="80" fill="#ffaa00" filter="url(#heavyBlur)" opacity="0.25" />
+    <circle cx="100" cy="180" r="60" fill="#00ff88" filter="url(#heavyBlur)" opacity="0.2" />
+
+    <!-- 3. Topography / East African Rift Valley Contours -->
+    <g fill="none" stroke="#4a6bdf" stroke-width="1.5" opacity="0.15">
+        <path d="M-20,280 Q 150,220 280,260 T 580,200" />
+        <path d="M-20,295 Q 150,235 280,275 T 580,215" />
+        <path d="M-20,265 Q 150,205 280,245 T 580,185" />
+        <path d="M-20,250 Q 150,190 280,230 T 580,170" />
+        <path d="M-20,235 Q 150,175 280,215 T 580,155" />
+        <path d="M-20,220 Q 150,160 280,200 T 580,140" />
+        <path d="M-20,205 Q 150,145 280,185 T 580,125" />
+    </g>
+
+    <!-- 4. Spatiotemporal Radar / Sentinel UI at Center Node -->
+    <circle cx="240" cy="140" r="45" fill="none" stroke="#ffaa00" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+    <circle cx="240" cy="140" r="75" fill="none" stroke="#ffaa00" stroke-width="0.5" opacity="0.15"/>
+    <path d="M240,65 L240,215 M165,140 L315,140" stroke="#ffaa00" stroke-width="0.5" opacity="0.2" />
+
+    <!-- 5. Livestock Constellation (Zoonotic Subject) -->
+    <!-- Represents the intersection of biology and data points -->
+    <g transform="translate(10, -10)">
+        <g stroke="rgba(0, 255, 136, 0.3)" stroke-width="1.5" fill="none">
+            <!-- Horns -->
+            <polyline points="440,60 460,90 500,90 520,60" />
+            <!-- Ears to Snout -->
+            <polyline points="460,90 430,100 470,140 465,170 495,170 490,140 530,100 500,90" />
+            <!-- Forehead to Cheeks -->
+            <polyline points="460,90 470,140 490,140 500,90" />
+            <!-- Snout Bridge -->
+            <line x1="470" y1="140" x2="490" y2="140" />
+        </g>
+        <!-- Constellation Nodes -->
+        <g fill="#00ff88" opacity="0.8">
+            <circle cx="440" cy="60" r="2" filter="url(#glow)"/>
+            <circle cx="520" cy="60" r="2" filter="url(#glow)"/>
+            <circle cx="460" cy="90" r="3" filter="url(#glow)"/>
+            <circle cx="500" cy="90" r="3" filter="url(#glow)"/>
+            <circle cx="430" cy="100" r="2"/>
+            <circle cx="530" cy="100" r="2"/>
+            <circle cx="470" cy="140" r="3"/>
+            <circle cx="490" cy="140" r="3"/>
+            <circle cx="465" cy="170" r="2"/>
+            <circle cx="495" cy="170" r="2"/>
+        </g>
+    </g>
+
+    <!-- 6. Multi-Agent AI System Connections -->
+    <path d="M100,180 L240,140 L360,200" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2" stroke-dasharray="4,4" />
+    <path d="M360,200 L470,80" fill="none" stroke="#ff3366" stroke-width="1.5" stroke-dasharray="2,4" opacity="0.6"/>
+    <path d="M240,140 L480,130" fill="none" stroke="#ffaa00" stroke-width="1.5" stroke-dasharray="2,4" opacity="0.4"/>
+
+    <!-- Agent Node 1: Data Ingestion -->
+    <circle cx="100" cy="180" r="14" fill="#070b19" stroke="#00ff88" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="100" cy="180" r="5" fill="#00ff88" />
+    <text x="100" y="208" font-family="monospace" font-size="9" font-weight="bold" fill="#00ff88" text-anchor="middle" letter-spacing="0.5">INGEST</text>
+
+    <!-- Agent Node 2: Epi Modeling -->
+    <circle cx="240" cy="140" r="18" fill="#070b19" stroke="#ffaa00" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="240" cy="140" r="7" fill="#ffaa00" />
+    <text x="240" y="117" font-family="monospace" font-size="9" font-weight="bold" fill="#ffaa00" text-anchor="middle" letter-spacing="0.5">MODEL (R0)</text>
+
+    <!-- Agent Node 3: Secure Harness / Action -->
+    <circle cx="360" cy="200" r="14" fill="#070b19" stroke="#ff3366" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="360" cy="200" r="5" fill="#ff3366" />
+    <text x="360" y="228" font-family="monospace" font-size="9" font-weight="bold" fill="#ff3366" text-anchor="middle" letter-spacing="0.5">ACTION</text>
+
+    <!-- 7. UI Elements & Data Panels -->
+    <g transform="translate(25, 105)">
+        <rect width="115" height="46" rx="4" fill="rgba(20, 30, 60, 0.6)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+        <text x="8" y="14" font-family="monospace" font-size="7" fill="#a0aec0">PARAM: LST_Day</text>
+        <text x="8" y="26" font-family="monospace" font-size="7" fill="#a0aec0">PARAM: Soil_Moist</text>
+        <text x="8" y="38" font-family="monospace" font-size="7" fill="#ffaa00" font-weight="bold">STATUS: ANOMALY</text>
+        <circle cx="102" cy="35" r="3" fill="#ffaa00" filter="url(#glow)"/>
+    </g>
+
+    <!-- R0 Mathematical Notation Graphic -->
+    <text x="500" y="250" font-family="Georgia, serif" font-size="32" font-style="italic" font-weight="bold" fill="rgba(255, 255, 255, 0.05)">R<tspan dy="12" font-size="20">0</tspan></text>
+
+    <!-- 8. Typography / Titles -->
+    <text x="25" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#ffffff" letter-spacing="1">ONE HEALTH DISEASE INTELLIGENCE</text>
+    
+    <text x="25" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#00ff88" letter-spacing="0.5">MULTI-AGENT SPATIOTEMPORAL FOREWARNING</text>
+    
+    <text x="25" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#a0aec0">&amp; EPIDEMIC MODELING FOR LIVESTOCK PATHOGENS</text>
+
+    <!-- 9. Track Tag -->
+    <g transform="translate(25, 235)">
+        <rect width="145" height="24" rx="12" fill="rgba(0, 255, 136, 0.1)" stroke="#00ff88" stroke-width="1" />
+        <text x="72.5" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#00ff88" text-anchor="middle" letter-spacing="0.5">TRACK: AGENTS FOR GOOD</text>
+    </g>
+</svg>
