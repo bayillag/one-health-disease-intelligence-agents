@@ -1,1 +1,31 @@
+# .semgrep.yaml
+rules:
+  - id: detect-hardcoded-api-keys
+    pattern-either:
+      - pattern: |
+          $KEY = "AIzaSy..."
+      - pattern: |
+          $KEY = "sk-..."
+    message: "Security Violation: Hardcoded API key or credential string detected in the codebase. Move credentials to environment variables."
+    severity: ERROR
+    languages: [python, javascript]
 
+  - id: prevent-arbitrary-code-execution
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: exec(...)
+    message: "Security Violation: Insecure usage of dynamic code execution (eval/exec) detected. Dynamic code generation represents a critical sandbox escape vulnerability."
+    severity: ERROR
+    languages: [python]
+
+  - id: sql-injection-vulnerability
+    pattern: $DB.execute("..." + ...)
+    message: "Security Violation: Unescaped string concatenation detected inside database query tool call. This introduces a critical SQL Injection vector. Use parameterized inputs (placeholders) instead."
+    severity: ERROR
+    languages: [python]
+
+  - id: insecure-subprocess-execution
+    pattern: subprocess.run(..., shell=True)
+    message: "Security Violation: sub-process execution with shell=True detected. This can lead to arbitrary shell command execution if inputs are prompt-injected."
+    severity: ERROR
+    languages: [python]
