@@ -1,1 +1,165 @@
-
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_at": "2026-06-25 14:30:45",
+    "forecast_model": "Multi-Agent Logistic Sigmoid (ADK)",
+    "target_region": "Ethiopia - Southwest Rift Valley / Omo Basin",
+    "record_count": 7
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.56, 5.78]
+      },
+      "properties": {
+        "district": "Jinka",
+        "region": "South_Ethiopia",
+        "primary_pathogen": "Anthrax",
+        "zoonotic_risk": true,
+        "active_cases": 12,
+        "total_deaths": 3,
+        "risk_probability": 0.8542,
+        "risk_class": "Very High Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 27.5,
+          "relative_humidity_pct": 82.0,
+          "precipitation_mm": 185.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.44, 11.56]
+      },
+      "properties": {
+        "district": "Asayita",
+        "region": "Afar",
+        "primary_pathogen": "Peste des Petits Ruminants",
+        "zoonotic_risk": false,
+        "active_cases": 18,
+        "total_deaths": 5,
+        "risk_probability": 0.9122,
+        "risk_class": "Very High Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 38.0,
+          "relative_humidity_pct": 45.0,
+          "precipitation_mm": 60.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.08, 4.88]
+      },
+      "properties": {
+        "district": "Yabelo",
+        "region": "Oromia",
+        "primary_pathogen": "Anthrax",
+        "zoonotic_risk": true,
+        "active_cases": 9,
+        "total_deaths": 2,
+        "risk_probability": 0.6581,
+        "risk_class": "High Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 32.4,
+          "relative_humidity_pct": 50.0,
+          "precipitation_mm": 85.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.65, 5.92]
+      },
+      "properties": {
+        "district": "Bako Gazer",
+        "region": "South_Ethiopia",
+        "primary_pathogen": "Anthrax",
+        "zoonotic_risk": true,
+        "active_cases": 4,
+        "total_deaths": 1,
+        "risk_probability": 0.4215,
+        "risk_class": "Medium Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 26.1,
+          "relative_humidity_pct": 75.0,
+          "precipitation_mm": 140.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.72, 14.13]
+      },
+      "properties": {
+        "district": "Axum",
+        "region": "Tigray",
+        "primary_pathogen": "Lumpy Skin Disease",
+        "zoonotic_risk": false,
+        "active_cases": 14,
+        "total_deaths": 2,
+        "risk_probability": 0.3842,
+        "risk_class": "Medium Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 24.3,
+          "relative_humidity_pct": 55.0,
+          "precipitation_mm": 95.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.50, 5.10]
+      },
+      "properties": {
+        "district": "Gode",
+        "region": "Somali",
+        "primary_pathogen": "Rift Valley Fever",
+        "zoonotic_risk": true,
+        "active_cases": 1,
+        "total_deaths": 0,
+        "risk_probability": 0.1250,
+        "risk_class": "Low Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 34.2,
+          "relative_humidity_pct": 40.0,
+          "precipitation_mm": 45.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.47, 7.05]
+      },
+      "properties": {
+        "district": "Awasa",
+        "region": "Sidama",
+        "primary_pathogen": "Fasciolosis",
+        "zoonotic_risk": true,
+        "active_cases": 22,
+        "total_deaths": 4,
+        "risk_probability": 0.1895,
+        "risk_class": "Low Risk",
+        "biophysical_profile": {
+          "temp_lst_celsius": 22.8,
+          "relative_humidity_pct": 68.0,
+          "precipitation_mm": 110.0
+        }
+      }
+    }
+  ]
+}
