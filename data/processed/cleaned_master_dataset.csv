@@ -1,1 +1,23 @@
-
+district,region,disease_name,species,active_cases,population,deaths,year,latitude,longitude,temperature_lst,relative_humidity,precipitation_mm
+Jinka,South_Ethiopia,Anthrax,cattle,12,45000,3,2025,5.78,36.56,27.5,82.0,185.0
+Bako Gazer,South_Ethiopia,Anthrax,cattle,4,32000,1,2025,5.92,36.65,26.1,75.0,140.0
+Hammer,South_Ethiopia,Foot and Mouth Disease,cattle,0,15000,0,2025,5.20,36.45,29.4,50.0,45.0
+Asayita,Afar,Peste des Petits Ruminants,goat,18,68000,5,2025,11.56,41.44,38.0,45.0,60.0
+Yabelo,Oromia,Anthrax,cattle,9,89000,2,2025,4.88,38.08,32.4,50.0,85.0
+Gode,Somali,Rift Valley Fever,sheep,1,54000,0,2025,5.10,43.50,34.2,40.0,45.0
+Axum,Tigray,Lumpy Skin Disease,cattle,14,29000,2,2025,14.13,38.72,24.3,55.0,95.0
+Awasa,Sidama,Fasciolosis,sheep,22,41000,4,2025,7.05,38.47,22.8,68.0,110.0
+Jinka,South_Ethiopia,Lumpy Skin Disease,cattle,8,45000,1,2025,5.78,36.56,27.5,82.0,185.0
+Bako Gazer,South_Ethiopia,Lumpy Skin Disease,cattle,11,32000,1,2025,5.92,36.65,26.1,75.0,140.0
+Asayita,Afar,Contagious Caprine Pleuro-Pneumonia,goat,34,68000,9,2025,11.56,41.44,38.0,45.0,60.0
+Yabelo,Oromia,Foot and Mouth Disease,cattle,25,89000,0,2025,4.88,38.08,32.4,50.0,85.0
+Gode,Somali,Peste des Petits Ruminants,goat,15,54000,3,2025,5.10,43.50,34.2,40.0,45.0
+Axum,Tigray,Pneumonic Pasteurellosis,sheep,40,29000,6,2025,14.13,38.72,24.3,55.0,95.0
+Awasa,Sidama,Heartwater,goat,7,41000,1,2025,7.05,38.47,22.8,68.0,110.0
+Jinka,South_Ethiopia,Trypanosomosis,cattle,31,45000,2,2025,5.78,36.56,27.5,82.0,185.0
+Bako Gazer,South_Ethiopia,Trypanosomosis,cattle,19,32000,1,2025,5.92,36.65,26.1,75.0,140.0
+Asayita,Afar,Sheep Pox and Goat Pox,sheep,8,68000,2,2025,11.56,41.44,38.0,45.0,60.0
+Yabelo,Oromia,Blackleg / Black Quarter,cattle,13,89000,3,2025,4.88,38.08,32.4,50.0,85.0
+Gode,Somali,Rabies,canine,2,1200,2,2025,5.10,43.50,34.2,40.0,45.0
+Axum,Tigray,Babesiosis,cattle,5,29000,0,2025,14.13,38.72,24.3,55.0,95.0
+Awasa,Sidama,Theileriosis,cattle,6,41000,0,2025,7.05,38.47,22.8,68.0,110.0
