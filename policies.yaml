@@ -1,1 +1,47 @@
+# policies.yaml
 
+# ====================================================================
+# Environment Gating Rules (Structural Traffic Lights)
+# ====================================================================
+environments:
+  localhost:
+    blocked_tools:
+      - send_email               # Prevent accidental mock mail blasts during testing
+      - execute_disbursement     # Block transactional tools in development mode
+  production:
+    blocked_tools: []            # Checked at runtime via mTLS and central gateways
+
+# ====================================================================
+# Role-Based Tool Access Matrices (Attribute-Based Access Control)
+# ====================================================================
+roles:
+  viewer:
+    allowed_tools:
+      - list_files
+      - read_file
+      - query_knowledge
+      - calculate_surveillance_sample_size
+  
+  vet_lab_staff:
+    allowed_tools:
+      - list_files
+      - read_file
+      - query_knowledge
+      - calculate_surveillance_sample_size
+      - add_knowledge
+      - query_region_single_disease
+      - query_region_all_diseases
+      - query_district_single_disease
+  
+  administrator:
+    allowed_tools:
+      - "*"                      # Wildcard access: has rights to invoke all tools
+      
+# ====================================================================
+# Just-In-Time (JIT) Verification & High-Stakes Gating Policies
+# ====================================================================
+high_stakes_actions:
+  execute_disbursement:
+    requires_human_approval: true
+    requires_vibe_diff: true
+    budget_limit_usd: 100.0
