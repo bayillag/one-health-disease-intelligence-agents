@@ -59,48 +59,12 @@ To secure the execution loop against prompt injection and the *Confused Deputy* 
 *   **Hybrid Policy Server:** Enforces structural gating (YAML-based tool access permissions) and semantic gating (Gemini-vetted input filtering).
 *   **Vibe Diff Elicitation:** Intercepts high-stakes action tools to translate complex proposed steps into a plain-English summary, demanding explicit human-in-the-loop authorization.
 
+*   
+
 one-health-disease-intelligence-agents/
-│
-├── README.md                                 # Complete project documentation & guide
-├── requirements.txt                          # Python dependencies list
-├── run_pipeline.py                           # Main automated execution run script
-├── policies.yaml                             # Standard structural gating rules (Pillar 4)
-├── .semgrep.yaml                             # Static security analysis rules (Pillar 6)
-│
-├── data/
-│   ├── raw/                                  # Original source datasets
-│   │   ├── veterinary_records.csv            # Raw district case histories (Ethiopia)
-│   │   └── climate_layers.csv                # Raw satellite & meteorological measurements
-│   │
-│   └── processed/                            # Engineered datasets consumed by R Shiny
-│       ├── cleaned_master_dataset.csv        # Normalized joined baseline table
-│       └── risk_assessment_output.csv        # Evaluated risk, deltas, and R0 outcomes
-│
-├── specs/                                    # Spec-Driven Development files (SDD)
-│   ├── user_service.md                       # Architectural specifications
-│   └── surveillance_sampling.feature         # BDD Gherkin scenario definitions
-│
-├── security/                                 # Secure development harness modules
-│   ├── check_dependencies.py                 # Dependency allowlist validator (SCA)
-│   ├── firewall.py                           # LLM-based input prompt injection firewall
-│   └── triage_gate.py                        # Human-in-the-loop Vibe Diff approval gate
-│
-├── notebooks/                                # Kaggle development notebooks
-│   ├── 01_data_ingestion.ipynb               # Parameter range checking & ingestion validation
-│   ├── 02_risk_analysis.ipynb                # Modeling and R0 analysis notebook
-│   └── 03_agent_communication.ipynb          # Query workflows, advisories & GIS payloads
-│
+
 ├── src/                                      # Core production codebase
-│   ├── __init__.py
-│   │
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── disease_profiles.py               # 19 Pathogen baseline biological characteristics
-│   │   └── parameter_registry.py             # 18 Biophysical parameter range definitions
-│   │
 │   ├── agents/
-│   │   ├── __init__.py
-│   │   ├── data_ingestion_agent.py           # Ingests, cleans, & validates climate boundaries
 │   │   ├── risk_analysis_agent.py            # Outbreak probability and logistic scoring
 │   │   ├── disease_informatics_engine.py      # Computes the 9 descriptive dashboard views
 │   │   ├── analytics_suite.py                # Runs disease trends and spatial groupings
