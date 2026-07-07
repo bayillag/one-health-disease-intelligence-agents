@@ -1,1 +1,23 @@
-
+district,region,disease_name,species,active_cases,population,deaths,year,latitude,longitude,temperature_lst,relative_humidity,precipitation_mm,risk_probability,risk_class
+Jinka,South_Ethiopia,Anthrax,cattle,12,45000,3,2025,5.78,36.56,27.5,82.0,185.0,0.9413,Very High Risk
+Bako Gazer,South_Ethiopia,Anthrax,cattle,4,32000,1,2025,5.92,36.65,26.1,75.0,140.0,0.9551,Very High Risk
+Hammer,South_Ethiopia,Foot and Mouth Disease,cattle,0,15000,0,2025,5.20,36.45,29.4,50.0,45.0,0.3090,Medium Risk
+Asayita,Afar,Peste des Petits Ruminants,goat,18,68000,5,2025,11.56,41.44,38.0,45.0,60.0,0.6547,High Risk
+Yabelo,Oromia,Anthrax,cattle,9,89000,2,2025,4.88,38.08,32.4,50.0,85.0,0.8278,Very High Risk
+Gode,Somali,Rift Valley Fever,sheep,1,54000,0,2025,5.10,43.50,34.2,40.0,45.0,0.6974,High Risk
+Axum,Tigray,Lumpy Skin Disease,cattle,14,29000,2,2025,14.13,38.72,24.3,55.0,95.0,0.9686,Very High Risk
+Awasa,Sidama,Fasciolosis,sheep,22,41000,4,2025,7.05,38.47,22.8,68.0,110.0,0.9627,Very High Risk
+Jinka,South_Ethiopia,Lumpy Skin Disease,cattle,8,45000,1,2025,5.78,36.56,27.5,82.0,185.0,0.9413,Very High Risk
+Bako Gazer,South_Ethiopia,Lumpy Skin Disease,cattle,11,32000,1,2025,5.92,36.65,26.1,75.0,140.0,0.9551,Very High Risk
+Asayita,Afar,Contagious Caprine Pleuro-Pneumonia,goat,34,68000,9,2025,11.56,41.44,38.0,45.0,60.0,0.6547,High Risk
+Yabelo,Oromia,Foot and Mouth Disease,cattle,25,89000,0,2025,4.88,38.08,32.4,50.0,85.0,0.8278,Very High Risk
+Gode,Somali,Peste des Petits Ruminants,goat,15,54000,3,2025,5.10,43.50,34.2,40.0,45.0,0.6974,High Risk
+Axum,Tigray,Pneumonic Pasteurellosis,sheep,40,29000,6,2025,14.13,38.72,24.3,55.0,95.0,0.9686,Very High Risk
+Awasa,Sidama,Heartwater,goat,7,41000,1,2025,7.05,38.47,22.8,68.0,110.0,0.9627,Very High Risk
+Jinka,South_Ethiopia,Trypanosomosis,cattle,31,45000,2,2025,5.78,36.56,27.5,82.0,185.0,0.9413,Very High Risk
+Bako Gazer,South_Ethiopia,Trypanosomosis,cattle,19,32000,1,2025,5.92,36.65,26.1,75.0,140.0,0.9551,Very High Risk
+Asayita,Afar,Sheep Pox and Goat Pox,sheep,8,68000,2,2025,11.56,41.44,38.0,45.0,60.0,0.6547,High Risk
+Yabelo,Oromia,Blackleg / Black Quarter,cattle,13,89000,3,2025,4.88,38.08,32.4,50.0,85.0,0.8278,Very High Risk
+Gode,Somali,Rabies,canine,2,1200,2,2025,5.10,43.50,34.2,40.0,45.0,0.6974,High Risk
+Axum,Tigray,Babesiosis,cattle,5,29000,0,2025,14.13,38.72,24.3,55.0,95.0,0.9686,Very High Risk
+Awasa,Sidama,Theileriosis,cattle,6,41000,0,2025,7.05,38.47,22.8,68.0,110.0,0.9627,Very High Risk
