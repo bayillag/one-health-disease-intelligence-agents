@@ -1,1 +1,9 @@
-
+district,region,temperature_lst,relative_humidity,precipitation_mm
+Jinka,South_Ethiopia,27.5,82.0,185.0
+Bako Gazer,South_Ethiopia,26.1,75.0,140.0
+Hammer,South_Ethiopia,29.4,50.0,45.0
+Asayita,Afar,38.0,45.0,60.0
+Yabelo,Oromia,32.4,50.0,85.0
+Gode,Somali,34.2,40.0,45.0
+Axum,Tigray,24.3,55.0,95.0
+Awasa,Sidama,22.8,68.0,110.0
